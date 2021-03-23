@@ -1,0 +1,21 @@
+# Shane Wang
+# 20200622
+
+file=$1
+if [[ -z ${file} ]]; then {
+    file=$(ls -rt *cpp | tail -1)
+}
+fi
+
+output=$(echo ${file} | gawk '{
+    n=split($0, tmp, ".")
+    for (i=1; i<n; i++) {
+        file=sprintf("%s%s.", file, tmp[i])
+    }
+    file=sprintf("%sexe", file)
+    print file
+}')
+
+set -x
+g++ -Og -g -std=c++11 -o ${output} ${file}
+[[ $? -eq 0 ]] && ./${output}

@@ -1,0 +1,73 @@
+<mxfile host="app.diagrams.net" modified="2024-06-12T04:03:19.034Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36 Edg/125.0.0.0" etag="0NrJxBrbAmTsSFFymVmL" version="24.4.9" type="github">
+  <diagram name="Page-1" id="-QzxSuFqvz5v9N_h1NnL">
+    <mxGraphModel dx="892" dy="-649" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="0ELKXlubmmHXlFrDKu8Z-1" value="" style="whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="1" vertex="1">
+          <mxGeometry x="346" y="1301" width="440" height="352" as="geometry" />
+        </mxCell>
+        <mxCell id="0ELKXlubmmHXlFrDKu8Z-3" value="IMS VM" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+          <mxGeometry x="379" y="1363" width="365" height="105" as="geometry" />
+        </mxCell>
+        <mxCell id="0ELKXlubmmHXlFrDKu8Z-9" value="Proxy Server" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+          <mxGeometry x="904" y="1475" width="186" height="152" as="geometry" />
+        </mxCell>
+        <mxCell id="0ELKXlubmmHXlFrDKu8Z-27" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="0ELKXlubmmHXlFrDKu8Z-3" edge="1" target="61Xa0DoVHyPd-GervR1L-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="324" y="1229.35" as="sourcePoint" />
+            <mxPoint x="529" y="1229" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="0ELKXlubmmHXlFrDKu8Z-28" value="HTTPS request to remote Google FCM server" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#999999;" parent="1" vertex="1">
+          <mxGeometry x="424" y="1436" width="285" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="61Xa0DoVHyPd-GervR1L-1" value="FEPH VM&lt;div&gt;(SBC Firewall)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="379" y="1498.5" width="365" height="105" as="geometry" />
+        </mxCell>
+        <mxCell id="61Xa0DoVHyPd-GervR1L-3" value="Google FCM&lt;div&gt;Server&lt;/div&gt;" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="931" y="1321" width="120" height="104" as="geometry" />
+        </mxCell>
+        <mxCell id="0ELKXlubmmHXlFrDKu8Z-2" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;SBC Lab&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="442" y="1313.1" width="240" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="61Xa0DoVHyPd-GervR1L-4" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="61Xa0DoVHyPd-GervR1L-1" target="0ELKXlubmmHXlFrDKu8Z-9">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="572" y="1478" as="sourcePoint" />
+            <mxPoint x="572" y="1509" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="61Xa0DoVHyPd-GervR1L-5" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.55;entryY=0.95;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="0ELKXlubmmHXlFrDKu8Z-9" target="61Xa0DoVHyPd-GervR1L-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1034.47" y="1453" as="sourcePoint" />
+            <mxPoint x="1198.47" y="1453" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="61Xa0DoVHyPd-GervR1L-6" value="Set iptables to redirect the packages which sending to Google to Proxy Server" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#999999;" vertex="1" parent="1">
+          <mxGeometry x="414" y="1570" width="285" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="61Xa0DoVHyPd-GervR1L-7" value="Set iptables to redirect the packages received from Google to SBC Lab" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#999999;" vertex="1" parent="1">
+          <mxGeometry x="919.5" y="1578" width="155" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="61Xa0DoVHyPd-GervR1L-8" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.55;entryY=0.95;entryDx=0;entryDy=0;entryPerimeter=0;dashed=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1007" y="1420" as="sourcePoint" />
+            <mxPoint x="1007" y="1475" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="61Xa0DoVHyPd-GervR1L-9" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="905" y="1561" as="sourcePoint" />
+            <mxPoint x="745" y="1561" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="61Xa0DoVHyPd-GervR1L-10" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;dashed=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="572" y="1498" as="sourcePoint" />
+            <mxPoint x="572" y="1467" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

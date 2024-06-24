@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-06-24T02:19:45.509Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0" etag="Yzjx3FZdOsjs5M7f3OTu" version="24.6.0" type="github">
+<mxfile host="app.diagrams.net" modified="2024-06-24T02:44:00.187Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36 Edg/126.0.0.0" etag="LBBDTUntUPmWsQvJZdoD" version="24.6.0" type="github">
   <diagram name="Page-1" id="qyNBStYEPPfysUZrWMZV">
-    <mxGraphModel dx="1776" dy="1089" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2041" dy="1089" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -35,16 +35,16 @@
           <mxGeometry x="1208.5" y="790" width="101" height="30" as="geometry" />
         </mxCell>
         <mxCell id="oLDFPY36CH1oZy1BI-KY-1" value="&lt;b&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;Google&lt;/font&gt;&lt;/b&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;oAuth Server&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="1700" y="420" width="240" height="150" as="geometry" />
+          <mxGeometry x="1717" y="311" width="240" height="150" as="geometry" />
         </mxCell>
         <mxCell id="oLDFPY36CH1oZy1BI-KY-3" value="&lt;b&gt;&lt;font style=&quot;font-size: 20px;&quot;&gt;Google&lt;/font&gt;&lt;/b&gt;&lt;div&gt;&lt;span style=&quot;font-size: 20px;&quot;&gt;&lt;b&gt;FCM Server&lt;/b&gt;&lt;/span&gt;&lt;/div&gt;" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="1698" y="940" width="230" height="150" as="geometry" />
+          <mxGeometry x="1703" y="895" width="230" height="150" as="geometry" />
         </mxCell>
         <mxCell id="Q_Rq_-5st52PdzcUgvkT-1" value="172.217.16.138 oauth2.googleapis.com" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="1800" y="580" width="60" height="30" as="geometry" />
+          <mxGeometry x="1817" y="471" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="Q_Rq_-5st52PdzcUgvkT-2" value="216.239.36.55 fcm.googleapis.com" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="1800" y="1110" width="60" height="30" as="geometry" />
+          <mxGeometry x="1805" y="1065" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="Q_Rq_-5st52PdzcUgvkT-9" value="10.99.42.72" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="1227" y="295" width="60" height="30" as="geometry" />
@@ -219,6 +219,12 @@
         </mxCell>
         <mxCell id="Q_Rq_-5st52PdzcUgvkT-50" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
           <mxGeometry x="470" y="570" width="20" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="Q_Rq_-5st52PdzcUgvkT-52" value="22 port" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="622" y="1001" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Q_Rq_-5st52PdzcUgvkT-54" value="443 port" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="279" y="416" width="60" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
